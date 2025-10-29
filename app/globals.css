@@ -4,9 +4,9 @@
   --color-background: #ffffff;
   --color-foreground: #3a3a3a;
 
-  --color-royalblue: #0052cc;
-  --color-lightgrey: #f3f4f6;
-  --color-darkgrey: #3a3a3a;
+  --color-gold: #e3c075;
+  --color-gold-dark: #b3842a;
+  --color-navy: #0a1b3e;
   --color-white: #ffffff;
 
   --font-sans: var(--font-geist-sans);
@@ -14,14 +14,6 @@
 }
 
 @theme inline {
-  --color-background: #ffffff;
-  --color-foreground: #3a3a3a;
-
-  --color-royalblue: #0052cc;
-  --color-lightgrey: #f3f4f6;
-  --color-darkgrey: #3a3a3a;
-  --color-white: #ffffff;
-
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -39,44 +31,62 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.slider {
-  animation: slide 20s infinite;
+/* ✅ Slider container fits left side */
+.slider-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
 }
 
+/* ✅ Track length = number of slides */
+.slider-track {
+  display: flex;
+  width: 100%; /* 4 slides */
+  height: 100%;
+  animation: slide 24s infinite;
+}
+
+/* ✅ Each slide = EXACTLY 100% of container */
+.slide {
+  width: 100%;
+  flex-shrink: 0; /* prevents shrinking */
+}
+
+/* ✅ Image adjustments */
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ✅ 10 seconds per image slider */
 @keyframes slide {
   0% {
     transform: translateX(0%);
   }
-  20% {
+  22% {
     transform: translateX(0%);
   }
 
   25% {
     transform: translateX(-100%);
   }
-  45% {
+  47% {
     transform: translateX(-100%);
   }
 
   50% {
     transform: translateX(-200%);
   }
-  70% {
+  72% {
     transform: translateX(-200%);
   }
 
   75% {
     transform: translateX(-300%);
   }
-  95% {
+  100% {
     transform: translateX(-300%);
   }
-
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-.slide {
-  flex: 0 0 100%;
 }

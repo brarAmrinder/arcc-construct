@@ -3,11 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <header
-      className="px-8 py-4 
-  bg-gradient-to-r from-lightgrey to-white
-  text-darkgrey shadow-md border-b border-royalblue"
-    >
+    <header className=" px-8 py-2 bg-[var(--color-gold)] text-navy shadow-md">
       <nav className="flex justify-between items-center">
         <div className="flex items-center gap-10 text-[18px] font-bold">
           <Link href="/home" className="hover:text-royalblue transition">
@@ -32,9 +28,9 @@ export default function Home() {
         <Link href="/">
           {" "}
           <img
-            src="/big.png"
+            src="/big1.png"
             alt="arcc Logo"
-            className="w-16 h-16 cursor-pointer"
+            className="h-16 w-auto cursor-pointer "
           />{" "}
         </Link>{" "}
       </nav>{" "}
