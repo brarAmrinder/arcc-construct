@@ -84,7 +84,18 @@ Import your repository into Vercel.
 
 Vercel will automatically detect Next.js and build the project.
 
+---
+
+## Author
+
+**Amrinder Brar**
+
+GitHub: https://github.com/brarAmrinder
 
 ---
+
+## 📄 License
+
+This project was developed for educational purposes.
 
 
