@@ -35,13 +35,6 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/recentbuilds"
-              className="transition-colors duration-200 hover:text-blue-600"
-            >
-              Recent Builds
-            </Link>
-
-            <Link
               href="/services"
               className="transition-colors duration-200 hover:text-blue-600"
             >
@@ -49,7 +42,14 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/getintouch"
+              href="/contact"
+              className="transition-colors duration-200 hover:text-blue-600"
+            >
+              Contact
+            </Link>
+
+            <Link
+              href="/contact"
               className="rounded-full bg-blue-600 px-5 py-2 text-white transition hover:bg-blue-700"
             >
               Get in Touch

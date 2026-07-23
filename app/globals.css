@@ -60,6 +60,11 @@ body {
   object-fit: cover;
 }
 
+/* Enable smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 /* ✅ 10 seconds per image slider */
 @keyframes slide {
   0% {

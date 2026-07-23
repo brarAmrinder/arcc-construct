@@ -6,14 +6,51 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function Footer() {
-  const links = ["Home", "Our Story", "Services", "Recent Builds", "Contact"];
+  const links = [
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "Our Story",
+      href: "/ourstory",
+    },
+    {
+      name: "Services",
+      href: "/services",
+    },
+
+    {
+      name: "Contact",
+      href: "/contact",
+    },
+  ];
 
   const services = [
-    "New Home Builds",
-    "Luxury Renovations",
-    "Extensions",
-    "Project Management",
-    "Concrete & Foundations",
+    {
+      name: "New Home Builds",
+      href: "/services#new-home-builds",
+    },
+    {
+      name: "Luxury Renovations",
+      href: "/services#renovations",
+    },
+    {
+      name: "Home Extensions",
+      href: "/services#home-extensions",
+    },
+    {
+      name: "Project Management",
+      href: "/services#project-management",
+    },
+    {
+      name: "Foundations & Structural",
+      href: "/services#foundations",
+    },
+    {
+      name: "Architectural Planning",
+      href: "/services#architectural-planning",
+    },
   ];
 
   return (
@@ -104,7 +141,7 @@ export default function Footer() {
           </div>
 
           <Link
-            href="/getintouch"
+            href="/contact"
             className="
               mt-6
               md:mt-0
@@ -195,9 +232,9 @@ export default function Footer() {
 
             <ul className="space-y-4">
               {links.map((item) => (
-                <li key={item}>
+                <li key={item.name}>
                   <Link
-                    href="#"
+                    href={item.href}
                     className="
                       text-slate-300
                       hover:text-[var(--color-gold)]
@@ -208,7 +245,7 @@ export default function Footer() {
                     "
                   >
                     <span className="text-[var(--color-gold)]">→</span>
-                    {item}
+                    {item.name}
                   </Link>
                 </li>
               ))}
@@ -230,15 +267,17 @@ export default function Footer() {
 
             <ul className="space-y-4">
               {services.map((service) => (
-                <li
-                  key={service}
-                  className="
+                <li key={service.name}>
+                  <Link
+                    href={service.href}
+                    className="
                     text-slate-300
                     hover:text-white
                     transition
                   "
-                >
-                  {service}
+                  >
+                    {service.name}
+                  </Link>
                 </li>
               ))}
             </ul>
