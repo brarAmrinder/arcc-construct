@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ARC Construction
 
-## Getting Started
+A modern, high-performance web application for **ARC Construction**—providing premium residential and commercial construction services in Auckland, New Zealand. Built with **Next.js 15 (App Router)**, **Tailwind CSS**, and **Framer Motion**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+
+- **Responsive & Premium UI**: Custom dark theme design tailored with rich navy `#0B132B` and gold accent palettes.
+- **Dynamic Contact & Quote System**: Fully interactive quote request form with direct phone dialing (`tel:`) and location mapping integration.
+- **Seamless Navigation**: Fixed backdrop-blur navigation with mobile-responsive menu drawer.
+- **Fluid Animations**: Smooth page transitions and interactive micro-animations powered by Framer Motion.
+- **SEO Optimized**: Fully configured Next.js Metadata API for Auckland-focused local SEO.
+
+---
+
+## Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://framer.com/motion)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Fonts**: [Geist](https://vercel.com/font)
+
+---
+
+## 📁 Project Structure
+
+```text
+├── app/
+│   ├── components/       # Reusable UI components (Navbar, Footer, Contact, etc.)
+│   ├── contact/          # Contact & Free Quote route (/contact)
+│   ├── ourstory/         # About & Company story route (/ourstory)
+│   ├── services/         # Construction services route (/services)
+│   ├── globals.css       # Global styles & CSS variables
+│   ├── layout.tsx        # Root layout wrapper with font & nav setup
+│   └── page.tsx          # Homepage
+├── public/               # Static image assets and icons
+├── tsconfig.json         # TypeScript configuration
+└── package.json          # Dependencies & scripts
+
 ```
+## ⚡ Getting Started
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Prerequisites
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Ensure you have **Node.js 18.x** or later installed on your machine.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
 
-## Learn More
+1. **Clone the repository:**
+   ```bash
+   
+git clone git@github.com:brarAmrinder/arcc-construct.git
+cd arcc-construct
+   
+Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+Bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+Run the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Bash
+npm run dev
+Open in browser:
+Navigate to http://localhost:3000 to view the site live.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📦 Build & Production
+To build the application for production deployment:
 
-## Deploy on Vercel
+Bash
+npm run build
+npm run start
+🌐 Deployment
+The easiest way to deploy this Next.js app is using the Vercel Platform:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Push your code to GitHub / GitLab / Bitbucket.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Import your repository into Vercel.
+
+Vercel will automatically detect Next.js and build the project.
+
+
+---
+
+
