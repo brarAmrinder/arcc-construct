@@ -48,24 +48,24 @@ Ensure you have **Node.js 18.x** or later installed on your machine.
 
 ### Installation
 
-1. **Clone the repository:**
-   ```bash
-   
-git clone git@github.com:brarAmrinder/arcc-construct.git
+### Clone the repository
+
+```bash
+git clone https://github.com/brarAmrinder/arcc-construct.git
 cd arcc-construct
-   
-Install dependencies:
+```
 
-Bash
+### Install dependencies
+
+```bash
 npm install
-# or
-yarn install
-# or
-pnpm install
-Run the development server:
+```
 
-Bash
+### Run the development server
+
+```bash
 npm run dev
+```
 Open in browser:
 Navigate to http://localhost:3000 to view the site live.
 
@@ -86,7 +86,35 @@ Vercel will automatically detect Next.js and build the project.
 
 ---
 
-##Screenshots
+##Screenshots - shows a preview of images but for full version run the dev
+
+1. Main page of screen
+
+  <img width="1415" height="843" alt="Main" src="https://github.com/user-attachments/assets/7848f005-73ad-4255-b42f-b9d1f651deef" />
+
+2. Achievements
+
+   <img width="1419" height="850" alt="Achievements" src="https://github.com/user-attachments/assets/d31c7d5f-5ea3-4836-a751-873430da8637" />
+
+3. Testimonials
+
+   <img width="1417" height="800" alt="Testimonials" src="https://github.com/user-attachments/assets/569e8822-a37f-4844-be5a-2656cf88324e" />
+
+4. Footer
+
+   <img width="1418" height="848" alt="Footer" src="https://github.com/user-attachments/assets/686b3f64-b3a8-4c45-856f-8c24a14414ae" />
+
+5. Navigating to Our Story page
+
+   <img width="1419" height="774" alt="OurStory" src="https://github.com/user-attachments/assets/510e00ca-dfab-47ca-be2f-b689eb120e98" />
+
+6. Navigating to Services page
+
+   <img width="1419" height="770" alt="Services" src="https://github.com/user-attachments/assets/018ee660-4515-47f7-a425-1541a1698885" />
+
+7. Navigating to Contact page
+
+   <img width="1420" height="769" alt="Contact" src="https://github.com/user-attachments/assets/cecee273-6453-45cf-abd5-5c101a313f6a" />
 
 
 ## Author
